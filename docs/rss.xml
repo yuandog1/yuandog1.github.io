@@ -1,7 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Yuan的Blog</title><link>https://yuandog1.github.io</link><description>Yuan的博客</description><copyright>Yuan的Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://yuandog1.github.io/profile.svg</url><title>avatar</title><link>https://yuandog1.github.io</link></image><lastBuildDate>Wed, 10 Jul 2024 09:13:12 +0000</lastBuildDate><managingEditor>Yuan的Blog</managingEditor><ttl>60</ttl><webMaster>Yuan的Blog</webMaster><item><title>ModBus RTU数据帧截取</title><link>https://yuandog1.github.io/post/ModBus%20RTU-shu-ju-zheng-jie-qu.html</link><description>###  数据帧截取工具&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Yuan的Blog</title><link>https://yuandog1.github.io</link><description>Yuan的博客</description><copyright>Yuan的Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://yuandog1.github.io/profile.svg</url><title>avatar</title><link>https://yuandog1.github.io</link></image><lastBuildDate>Wed, 10 Jul 2024 09:47:27 +0000</lastBuildDate><managingEditor>Yuan的Blog</managingEditor><ttl>60</ttl><webMaster>Yuan的Blog</webMaster><item><title>ModBus RTU数据帧截取</title><link>https://yuandog1.github.io/post/ModBus%20RTU-shu-ju-zheng-jie-qu.html</link><description># 数据帧截取工具&#13;
 &gt;1. ComMonitor（唐老鸭）&#13;
-&gt; 2. AccessPort&#13;
-&gt; ...待更新&#13;
+&gt;2. AccessPort&#13;
+&gt;3. ...待更新&#13;
 &#13;
-- **ComMonitor**。</description><guid isPermaLink="true">https://yuandog1.github.io/post/ModBus%20RTU-shu-ju-zheng-jie-qu.html</guid><pubDate>Wed, 10 Jul 2024 08:02:14 +0000</pubDate></item></channel></rss>
+##**1.ComMonitor**&#13;
+&#13;
+&lt;img src='https://yuandog1.github.io/Snipaste_2024-07-10_17-23-54.png' alt='alt text' title='optional title' width='500' height='300'&gt;&#13;
+&#13;
+1. 设置串口的属性（串口号、波特率、数据位、校验位、停止位）&#13;
+2. 打开串口&#13;
+3. 在任一发送区内填写发送数据帧的信息,如:&#13;
+&#13;
+&lt;center&gt;&#13;
+`01 03 00 91 00 01 D5 E7`&#13;
+&lt;/center&gt;&#13;
+其中`01 03 00 91 00 01`为数据帧的帧信息,&#13;
+&#13;
+- `01`表示设备号&#13;
+- `03`表示寄存器的类型&#13;
+- `00 91`表示首个寄存器地址&#13;
+- `00 01`表示要收到的从首个寄存器地址开始的字节&#13;
+&#13;
+`D5 E7`为数据中的CRC校验码&#13;
+&#13;
+因此工具可以自动生成校验码，详细的CRC校验码生成规不再赘述，则详见：`网页`。</description><guid isPermaLink="true">https://yuandog1.github.io/post/ModBus%20RTU-shu-ju-zheng-jie-qu.html</guid><pubDate>Wed, 10 Jul 2024 08:02:14 +0000</pubDate></item></channel></rss>
