@@ -1,6 +1,7 @@
 {
-    "title":"Blog Title",
-    "subTitle":"Blog description",
+    "title":"Yuan的Blog",
+    "subTitle":"Yuan的博客",
     "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
-    "GMEEK_VERSION":"last"
+    "GMEEK_VERSION":"last",
+    "faviconUrl":""
 }
