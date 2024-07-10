@@ -3,5 +3,5 @@
     "subTitle":"Yuan的博客",
     "avatarUrl":"https://yuandog1.github.io/profile.svg",
     "GMEEK_VERSION":"last",
-    "faviconUrl":"https://yuandog1.github.io/profile.svg"
+    "singlePage":["about"]
 }
