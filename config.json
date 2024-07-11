@@ -6,6 +6,6 @@
     "singlePage":["about","link"],
     "needComment":0,
     "startSite":"07/10/2024",
-    "urlMode":"pinyin"
-    
+    "urlMode":"pinyin",
+    "showPostSource":0
 }
