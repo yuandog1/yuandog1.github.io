@@ -3,7 +3,7 @@
     "subTitle":"Yuan的博客",
     "avatarUrl":"https://yuandog1.github.io/profile.svg",
     "GMEEK_VERSION":"last",
-    "singlePage":["about"],
+    "singlePage":["about","detail"],
     "needComment":0,
     "startSite":"07/10/2024",
     "urlMode":"pinyin",
